@@ -1,5 +1,5 @@
-var partition = require('./helpers.js').partition;
-// var partition = require('./helpers.solution.js').partition;
+//var partition = require('./helpers.js').partition;
+ var partition = require('./helpers.solution.js').partition;
 
 // Note: quickSort sorts in place and manipulates the input array
 function quickSort(arr, left, right) {
@@ -22,8 +22,9 @@ function quickSort(arr, left, right) {
 
   // Sort the elements on either side of the pivot
   quickSort(arr, left, pivotIndex - 1);
+  console.log('25');
   quickSort(arr, pivotIndex + 1, right);
-
+  console.log('26', arr);
   return arr;
 }
 
