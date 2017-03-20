@@ -52,6 +52,8 @@ describe('MergeSort', function () {
     it('Sorts an array in ascending order', () => {
       var sorted = mergeSort([5, 3, 1, -6, 7]);
       expect(sorted).to.eql([-6, 1, 3, 5, 7]);
+      //   var sorted = mergeSort([5, 3, 1, -6]);
+      // expect(sorted).to.eql([-6, 1, 3, 5]);
     });
   })
 });

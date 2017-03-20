@@ -3,6 +3,7 @@ var merge = require('./helpers.js').merge;
 
 function mergeSort(arr, lo, hi) {
   var result = arr.slice(arr);
+
   lo = lo === undefined ? 0 : lo;
   hi = hi === undefined ? arr.length - 1 : hi;
 
@@ -14,7 +15,6 @@ function mergeSort(arr, lo, hi) {
 
   // Find the midpoint index
   var mid = Math.floor((lo + hi) / 2);
-
   // Call merge on the left and right halves
   var left = mergeSort(arr, lo, mid);
   var right = mergeSort(arr, mid + 1, hi);

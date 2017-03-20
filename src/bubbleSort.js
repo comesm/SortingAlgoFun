@@ -10,6 +10,7 @@ function bubbleSort(arr) {
     // At every position, check if the next element is larger than the current.
     // If so, swap
     // After every iteration, the largest element will be at the end of array
+    //[1,2,3,4,4,5,5,6]
     for (var j = 0; j < result.length - 1 - i; j++) {
       if (result[j] > result[j + 1]) {
         swap(result, j, j + 1);
